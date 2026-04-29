@@ -58,8 +58,8 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 
 ## Build Phase Tracker
 
-- [ ] Phase 0a — Claude Code Scaffold
-- [ ] Phase 0  — Foundation
+- [x] Phase 0a — Claude Code Scaffold
+- [x] Phase 0  — Foundation
 - [ ] Phase 1  — Auth Shell
 - [ ] Phase 2  — Brand Templates
 - [ ] Phase 3  — AI Director Agent
@@ -75,10 +75,12 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 | 2026-04-29 | OpenAI → Anthropic Claude             | $0 budget; Master Config        |
 | 2026-04-29 | Drop Lambda from MVP                  | No AWS account; Track A only    |
 | 2026-04-29 | 7 agents, 3 bundles, skills > rules   | Pattern synthesis from 6 repos  |
+| 2026-04-29 | Supabase Session pooler URL (5432)    | Direct `db.*` is IPv6-only      |
+| 2026-04-29 | drizzle-orm 0.36 + drizzle-kit 0.28   | 0.31 + 0.20 had isPgSequence mismatch |
 
 ## Active TODO (Top 3 Only)
 
-1. Run `/phase-start 0a` to scaffold the .claude/ folder
+1. Run `/phase-start 1` to begin Auth Shell
 2. _(empty)_
 3. _(empty)_
 
