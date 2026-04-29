@@ -65,7 +65,7 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 - [x] Phase 3  — AI Director Agent
 - [x] Phase 4  — Remotion Composition
 - [x] Phase 5  — Render Pipeline + Multi-Aspect
-- [ ] Phase 6  — Project UI + Agent Trace Viewer
+- [x] Phase 6  — Project UI + Agent Trace Viewer
 - [ ] Phase 7  — Polish, Tests, Deploy
 
 ## Decisions Log
@@ -82,10 +82,11 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 | 2026-04-29 | Source Serif Pro → Source Serif 4     | Google rebranded; matches @remotion/google-fonts module |
 | 2026-04-29 | Lazy Drizzle db client via Proxy      | tsx scripts load .env after import; eager Pool ignored env |
 | 2026-04-29 | Buckets via admin client, not SQL     | Idempotent setup script avoids dashboard SQL editor step |
+| 2026-04-30 | Fire-and-forget pipeline in dev       | Vercel kills functions post-response; SCALING.md notes Inngest swap |
 
 ## Active TODO (Top 3 Only)
 
-1. Run `/phase-start 6` to begin Project UI + Agent Trace Viewer
+1. Run `/phase-start 7` to begin Polish, Tests, Deploy
 2. _(empty)_
 3. _(empty)_
 
