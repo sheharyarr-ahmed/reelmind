@@ -60,7 +60,7 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 
 - [x] Phase 0a — Claude Code Scaffold
 - [x] Phase 0  — Foundation
-- [ ] Phase 1  — Auth Shell
+- [x] Phase 1  — Auth Shell
 - [ ] Phase 2  — Brand Templates
 - [ ] Phase 3  — AI Director Agent
 - [ ] Phase 4  — Remotion Composition
@@ -80,7 +80,7 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 
 ## Active TODO (Top 3 Only)
 
-1. Run `/phase-start 1` to begin Auth Shell
+1. Run `/phase-start 2` to begin Brand Templates
 2. _(empty)_
 3. _(empty)_
 
