@@ -64,7 +64,7 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 - [x] Phase 2  — Brand Templates
 - [x] Phase 3  — AI Director Agent
 - [x] Phase 4  — Remotion Composition
-- [ ] Phase 5  — Render Pipeline + Multi-Aspect
+- [x] Phase 5  — Render Pipeline + Multi-Aspect
 - [ ] Phase 6  — Project UI + Agent Trace Viewer
 - [ ] Phase 7  — Polish, Tests, Deploy
 
@@ -80,10 +80,12 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 | 2026-04-29 | DB password as separate env var       | Special chars in URL caused pg parser auth fails |
 | 2026-04-29 | Removed tsconfig baseUrl              | Caused `import "remotion"` to resolve our local dir |
 | 2026-04-29 | Source Serif Pro → Source Serif 4     | Google rebranded; matches @remotion/google-fonts module |
+| 2026-04-29 | Lazy Drizzle db client via Proxy      | tsx scripts load .env after import; eager Pool ignored env |
+| 2026-04-29 | Buckets via admin client, not SQL     | Idempotent setup script avoids dashboard SQL editor step |
 
 ## Active TODO (Top 3 Only)
 
-1. Run `/phase-start 5` to begin Render Pipeline + Multi-Aspect
+1. Run `/phase-start 6` to begin Project UI + Agent Trace Viewer
 2. _(empty)_
 3. _(empty)_
 

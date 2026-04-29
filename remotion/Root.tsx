@@ -67,10 +67,11 @@ export const RemotionRoot = () => {
         defaultProps={{
           manifest: DEFAULT_MANIFEST,
           brand: DEFAULT_BRAND,
+          aspectRatio: DEFAULT_ASPECT,
         }}
         calculateMetadata={({ props }) => {
-          // Phase 5 will pass aspectRatio via input props; for now default to 16x9.
-          const dims = ASPECT_DIMENSIONS[DEFAULT_ASPECT];
+          const aspect = props.aspectRatio ?? DEFAULT_ASPECT;
+          const dims = ASPECT_DIMENSIONS[aspect];
           return {
             durationInFrames: secondsToFrames(props.manifest.totalDuration),
             width: dims.width,

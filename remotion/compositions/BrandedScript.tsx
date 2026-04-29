@@ -11,6 +11,7 @@ import { LogoReveal } from "./scenes/LogoReveal";
 export type BrandedScriptProps = {
   manifest: VideoManifest;
   brand: BrandTemplateSnapshot;
+  aspectRatio?: "16x9" | "9x16" | "1x1";
 };
 
 function renderScene(
