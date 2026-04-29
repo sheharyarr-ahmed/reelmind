@@ -61,7 +61,7 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 - [x] Phase 0a — Claude Code Scaffold
 - [x] Phase 0  — Foundation
 - [x] Phase 1  — Auth Shell
-- [ ] Phase 2  — Brand Templates
+- [x] Phase 2  — Brand Templates
 - [ ] Phase 3  — AI Director Agent
 - [ ] Phase 4  — Remotion Composition
 - [ ] Phase 5  — Render Pipeline + Multi-Aspect
@@ -77,10 +77,11 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 | 2026-04-29 | 7 agents, 3 bundles, skills > rules   | Pattern synthesis from 6 repos  |
 | 2026-04-29 | Supabase Session pooler URL (5432)    | Direct `db.*` is IPv6-only      |
 | 2026-04-29 | drizzle-orm 0.36 + drizzle-kit 0.28   | 0.31 + 0.20 had isPgSequence mismatch |
+| 2026-04-29 | DB password as separate env var       | Special chars in URL caused pg parser auth fails |
 
 ## Active TODO (Top 3 Only)
 
-1. Run `/phase-start 2` to begin Brand Templates
+1. Run `/phase-start 3` to begin AI Director Agent (the crown jewel)
 2. _(empty)_
 3. _(empty)_
 
