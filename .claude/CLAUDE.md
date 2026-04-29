@@ -63,7 +63,7 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 - [x] Phase 1  — Auth Shell
 - [x] Phase 2  — Brand Templates
 - [x] Phase 3  — AI Director Agent
-- [ ] Phase 4  — Remotion Composition
+- [x] Phase 4  — Remotion Composition
 - [ ] Phase 5  — Render Pipeline + Multi-Aspect
 - [ ] Phase 6  — Project UI + Agent Trace Viewer
 - [ ] Phase 7  — Polish, Tests, Deploy
@@ -78,10 +78,12 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 | 2026-04-29 | Supabase Session pooler URL (5432)    | Direct `db.*` is IPv6-only      |
 | 2026-04-29 | drizzle-orm 0.36 + drizzle-kit 0.28   | 0.31 + 0.20 had isPgSequence mismatch |
 | 2026-04-29 | DB password as separate env var       | Special chars in URL caused pg parser auth fails |
+| 2026-04-29 | Removed tsconfig baseUrl              | Caused `import "remotion"` to resolve our local dir |
+| 2026-04-29 | Source Serif Pro → Source Serif 4     | Google rebranded; matches @remotion/google-fonts module |
 
 ## Active TODO (Top 3 Only)
 
-1. Run `/phase-start 4` to begin Remotion Composition
+1. Run `/phase-start 5` to begin Render Pipeline + Multi-Aspect
 2. _(empty)_
 3. _(empty)_
 

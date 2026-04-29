@@ -8,7 +8,7 @@ export const FONT_WHITELIST = [
   "Playfair Display",
   "Merriweather",
   "Lora",
-  "Source Serif Pro",
+  "Source Serif 4",
   "Bebas Neue",
   "Oswald",
 ] as const;
