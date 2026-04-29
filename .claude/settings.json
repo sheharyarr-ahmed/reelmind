@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm:*)",
+      "Bash(git status:*)", "Bash(git diff:*)", "Bash(git add:*)", "Bash(git log:*)",
+      "Bash(npx remotion render:*)", "Bash(npx remotion studio:*)",
+      "Bash(npx drizzle-kit:*)",
+      "Read(**)", "Edit(**)",
+      "Write(src/**)", "Write(remotion/**)", "Write(docs/**)", "Write(.claude/**)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)", "Bash(supabase db reset:*)",
+      "Write(.env)", "Write(.env.local)", "Write(.env.production)"
+    ],
+    "ask": [
+      "Bash(git push:*)", "Bash(git commit:*)",
+      "Bash(vercel:*)", "Bash(pnpm add:*)", "Bash(pnpm remove:*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "command": "echo 'Checking for secrets...' && [[ ! \"$CLAUDE_TOOL_INPUT\" =~ \\.env ]]"
+      }
+    ]
+  }
+}
