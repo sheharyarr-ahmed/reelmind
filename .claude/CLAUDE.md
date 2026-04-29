@@ -62,7 +62,7 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 - [x] Phase 0  — Foundation
 - [x] Phase 1  — Auth Shell
 - [x] Phase 2  — Brand Templates
-- [ ] Phase 3  — AI Director Agent
+- [x] Phase 3  — AI Director Agent
 - [ ] Phase 4  — Remotion Composition
 - [ ] Phase 5  — Render Pipeline + Multi-Aspect
 - [ ] Phase 6  — Project UI + Agent Trace Viewer
@@ -81,7 +81,7 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 
 ## Active TODO (Top 3 Only)
 
-1. Run `/phase-start 3` to begin AI Director Agent (the crown jewel)
+1. Run `/phase-start 4` to begin Remotion Composition
 2. _(empty)_
 3. _(empty)_
 
