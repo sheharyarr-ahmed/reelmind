@@ -66,7 +66,7 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 - [x] Phase 4  — Remotion Composition
 - [x] Phase 5  — Render Pipeline + Multi-Aspect
 - [x] Phase 6  — Project UI + Agent Trace Viewer
-- [ ] Phase 7  — Polish, Tests, Deploy
+- [x] Phase 7  — Polish, Tests, Deploy
 
 ## Decisions Log
 
@@ -86,7 +86,7 @@ ElevenLabs voiceover, music, B-roll, subtitles, team workspaces, mobile apps, cu
 
 ## Active TODO (Top 3 Only)
 
-1. Run `/phase-start 7` to begin Polish, Tests, Deploy
+1. v1.0 shipped — see docs/DEPLOY_CHECKLIST.md to push to Vercel
 2. _(empty)_
 3. _(empty)_
 
