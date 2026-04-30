@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { useForm, Controller } from "react-hook-form";
+import { useForm, Controller, type Control } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { toast } from "sonner";
@@ -260,8 +260,7 @@ function FontField({
 }: {
   label: string;
   name: "headingFont" | "bodyFont";
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  control: any;
+  control: Control<FormValues>;
   error?: string;
 }) {
   return (
