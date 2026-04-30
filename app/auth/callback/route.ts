@@ -8,27 +8,17 @@ export async function GET(request: NextRequest) {
   const type = searchParams.get("type");
   const next = searchParams.get("next") ?? "/dashboard";
 
-  // Debug envelope — surface what came in and any exchange error
-  const debug: Record<string, string> = {
-    hasCode: code ? "1" : "0",
-    hasTokenHash: tokenHash ? "1" : "0",
-    type: type ?? "none",
-  };
-
   const supabase = await createClient();
 
-  // Path 1: PKCE code flow (modern)
+  // PKCE code flow (modern Supabase email templates)
   if (code) {
     const { error } = await supabase.auth.exchangeCodeForSession(code);
     if (!error) {
       return NextResponse.redirect(`${origin}${next}`);
     }
-    debug.exchangeError = error.message;
-    debug.exchangeStatus = String(error.status ?? "");
-    debug.exchangeName = error.name ?? "";
   }
 
-  // Path 2: implicit token_hash flow (older Supabase email templates)
+  // Implicit token_hash flow (legacy Supabase email templates)
   const VALID_TYPES = ["email", "magiclink", "recovery", "invite", "signup"] as const;
   if (tokenHash && type && (VALID_TYPES as readonly string[]).includes(type)) {
     const { error } = await supabase.auth.verifyOtp({
@@ -38,10 +28,7 @@ export async function GET(request: NextRequest) {
     if (!error) {
       return NextResponse.redirect(`${origin}${next}`);
     }
-    debug.verifyError = error.message;
-    debug.verifyStatus = String(error.status ?? "");
   }
 
-  const params = new URLSearchParams({ error: "auth", ...debug });
-  return NextResponse.redirect(`${origin}/login?${params.toString()}`);
+  return NextResponse.redirect(`${origin}/login?error=auth`);
 }
