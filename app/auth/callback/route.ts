@@ -29,10 +29,10 @@ export async function GET(request: NextRequest) {
   }
 
   // Path 2: implicit token_hash flow (older Supabase email templates)
-  if (tokenHash && type) {
-    // @ts-expect-error — verifyOtp accepts these per Supabase docs
+  const VALID_TYPES = ["email", "magiclink", "recovery", "invite", "signup"] as const;
+  if (tokenHash && type && (VALID_TYPES as readonly string[]).includes(type)) {
     const { error } = await supabase.auth.verifyOtp({
-      type,
+      type: type as (typeof VALID_TYPES)[number],
       token_hash: tokenHash,
     });
     if (!error) {
