@@ -14,7 +14,8 @@
     "db:studio": "drizzle-kit studio",
     "remotion:studio": "remotion studio",
     "remotion:render": "remotion render",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "bump-deps": "tsx scripts/bump-deps.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.91.1",
