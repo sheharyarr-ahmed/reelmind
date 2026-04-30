@@ -18,7 +18,7 @@ export default async function Home() {
           <span className="text-lg font-semibold">ReelMind</span>
           <nav className="flex items-center gap-4 text-sm">
             <a
-              href="https://github.com/sheryahmedme/reelmind"
+              href="https://github.com/sheharyarr-ahmed/reelmind"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground"
@@ -49,7 +49,7 @@ export default async function Home() {
             </Button>
             <Button asChild size="lg" variant="outline">
               <a
-                href="https://github.com/sheryahmedme/reelmind"
+                href="https://github.com/sheharyarr-ahmed/reelmind"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -106,12 +106,12 @@ export default async function Home() {
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-6 text-xs text-muted-foreground">
           <span>ReelMind by Shery Labs</span>
           <a
-            href="https://github.com/sheryahmedme/reelmind"
+            href="https://github.com/sheharyarr-ahmed/reelmind"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-foreground"
           >
-            github.com/sheryahmedme/reelmind
+            github.com/sheharyarr-ahmed/reelmind
           </a>
         </div>
       </footer>

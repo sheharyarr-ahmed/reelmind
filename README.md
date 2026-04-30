@@ -167,7 +167,7 @@ Full dependency manifest: [`package.json`](package.json).
 Prerequisites: Node 20+, pnpm 10+, a Supabase project, an Anthropic API key.
 
 ```bash
-git clone https://github.com/sheryahmedme/reelmind.git
+git clone https://github.com/sheharyarr-ahmed/reelmind.git
 cd reelmind
 pnpm install
 cp .env.example .env.local

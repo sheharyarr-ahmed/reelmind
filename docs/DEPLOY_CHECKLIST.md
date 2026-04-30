@@ -6,7 +6,7 @@ Vercel + GitHub account interaction. This is the punch list.
 ## 1. Push the repo to GitHub
 
 ```bash
-git remote add origin git@github.com:sheryahmedme/reelmind.git
+git remote add origin git@github.com:sheharyarr-ahmed/reelmind.git
 git push -u origin main --tags
 ```
 
