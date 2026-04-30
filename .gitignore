@@ -1,6 +1,6 @@
 # Dependencies
 node_modules/
-pnpm-lock.yaml
+# pnpm-lock.yaml is committed for reproducible CI builds
 package-lock.json
 yarn.lock
 
@@ -41,3 +41,4 @@ coverage/
 tsconfig.tsbuildinfo
 out/
 test-results/
+.vercel
